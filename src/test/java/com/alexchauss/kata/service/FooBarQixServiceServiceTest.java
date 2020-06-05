@@ -23,4 +23,32 @@ public class FooBarQixServiceServiceTest {
         assertThat(result)
                 .isEqualTo(expected);
     }
+
+    @Test
+    public void whenTwo_thenTwo() {
+        // given
+        int input = 2;
+        String expected = "2";
+
+        // when
+        String result = fooBarQixService.getResult(input);
+
+        // then
+        assertThat(result)
+                .isEqualTo(expected);
+    }
+
+    @Test
+    public void whenThree_thenFooFoo() {
+        // given
+        int input = 3;
+        String expected = "FooFoo";
+
+        // when
+        String result = fooBarQixService.getResult(input);
+
+        // then
+        assertThat(result)
+                .isEqualTo(expected);
+    }
 }
