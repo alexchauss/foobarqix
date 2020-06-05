@@ -1,6 +1,9 @@
 # Compiled class file
 *.class
 
+# IDE folder
+.idea/
+
 # Log file
 *.log
 
@@ -21,3 +24,20 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+/src/test/java/com/alexchauss/kata/FoobarqixApplicationTests.java
+/src/main/java/com/alexchauss/kata/FoobarqixApplication.java
+/src/main/resources/application.properties
+/target/classes/application.properties
+/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst
+/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
+/target/surefire-reports/com.alexchauss.kata.FoobarqixApplicationTests.txt
+/target/surefire-reports/com.alexchauss.kata.service.FooBarQixServiceServiceTest.txt
+/target/surefire-reports/TEST-com.alexchauss.kata.FoobarqixApplicationTests.xml
+/target/surefire-reports/TEST-com.alexchauss.kata.service.FooBarQixServiceServiceTest.xml
+/.mvn/wrapper/maven-wrapper.properties
+/.mvn/wrapper/MavenWrapperDownloader.java
+/mvnw
+/mvnw.cmd
+/pom.xml
