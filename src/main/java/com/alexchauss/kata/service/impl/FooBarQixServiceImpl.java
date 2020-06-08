@@ -14,7 +14,7 @@ public class FooBarQixServiceImpl implements FooBarQixService {
     final String SEVEN = "7";
 
     @Override
-    public String getResult(int input) {
+    public String getFooBarQix(int input) {
 
         StringBuilder sb = new StringBuilder();
         final String inputToStr = String.valueOf(input);
