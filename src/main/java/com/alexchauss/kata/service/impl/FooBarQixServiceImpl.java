@@ -7,7 +7,11 @@ import org.springframework.stereotype.Service;
 public class FooBarQixServiceImpl implements FooBarQixService {
 
     final String FOO = "Foo";
+    final String BAR = "Bar";
+    final String QIX = "Qix";
     final String THREE = "3";
+    final String FIVE = "5";
+    final String SEVEN = "7";
 
     @Override
     public String getResult(int input) {
@@ -15,12 +19,9 @@ public class FooBarQixServiceImpl implements FooBarQixService {
         StringBuilder sb = new StringBuilder();
         final String inputToStr = String.valueOf(input);
 
-        if(input % 3 == 0) {
-            sb.append(FOO);
-        }
-        if(inputToStr.contains(THREE)) {
-            sb.append(FOO);
-        }
+        checkDivisibility(input, sb);
+
+        checkOccurences(inputToStr, sb);
 
         if(sb.length() == 0) {
             return inputToStr;
@@ -28,4 +29,31 @@ public class FooBarQixServiceImpl implements FooBarQixService {
 
         return sb.toString();
     }
+
+    private void checkDivisibility(int input, StringBuilder sb) {
+        if(input % 3 == 0) {
+            sb.append(FOO);
+        }
+        if(input % 5 == 0) {
+            sb.append(BAR);
+        }
+        if(input % 7 == 0) {
+            sb.append(QIX);
+        }
+    }
+
+    private void checkOccurences(String inputToStr, StringBuilder sb) {
+        for(char digit : inputToStr.toCharArray()) {
+            if(String.valueOf(digit).equals(THREE)) {
+                sb.append(FOO);
+            }
+            if(String.valueOf(digit).equals(FIVE)) {
+                sb.append(BAR);
+            }
+            if(String.valueOf(digit).equals(SEVEN)) {
+                sb.append(QIX);
+            }
+        }
+    }
+
 }

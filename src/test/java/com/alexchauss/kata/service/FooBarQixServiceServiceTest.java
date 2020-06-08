@@ -51,4 +51,102 @@ public class FooBarQixServiceServiceTest {
         assertThat(result)
                 .isEqualTo(expected);
     }
+
+    @Test
+    public void whenFour_thenFour() {
+        // given
+        int input = 4;
+        String expected = "4";
+
+        // when
+        String result = fooBarQixService.getResult(input);
+
+        // then
+        assertThat(result)
+                .isEqualTo(expected);
+    }
+
+    @Test
+    public void whenFive_thenBarBar() {
+        // given
+        int input = 5;
+        String expected = "BarBar";
+
+        // when
+        String result = fooBarQixService.getResult(input);
+
+        // then
+        assertThat(result)
+                .isEqualTo(expected);
+    }
+
+    @Test
+    public void whenSix_thenFoo() {
+        // given
+        int input = 6;
+        String expected = "Foo";
+
+        // when
+        String result = fooBarQixService.getResult(input);
+
+        // then
+        assertThat(result)
+                .isEqualTo(expected);
+    }
+
+    @Test
+    public void whenSeven_thenQixQix() {
+        // given
+        int input = 7;
+        String expected = "QixQix";
+
+        // when
+        String result = fooBarQixService.getResult(input);
+
+        // then
+        assertThat(result)
+                .isEqualTo(expected);
+    }
+
+    @Test
+    public void whenEight_thenEight() {
+        // given
+        int input = 8;
+        String expected = "8";
+
+        // when
+        String result = fooBarQixService.getResult(input);
+
+        // then
+        assertThat(result)
+                .isEqualTo(expected);
+    }
+
+    @Test
+    public void whenNine_thenFoo() {
+        // given
+        int input = 9;
+        String expected = "Foo";
+
+        // when
+        String result = fooBarQixService.getResult(input);
+
+        // then
+        assertThat(result)
+                .isEqualTo(expected);
+    }
+
+    @Test
+    public void whenTen_thenBar() {
+        // given
+        int input = 10;
+        String expected = "Bar";
+
+        // when
+        String result = fooBarQixService.getResult(input);
+
+        // then
+        assertThat(result)
+                .isEqualTo(expected);
+    }
 }
